@@ -5,7 +5,10 @@ export const IconLink = ({children, to = '/'} : {children: ReactNode, to?: strin
   const navigate = useNavigate()
 
   return (
-    <button onClick={() => navigate(to)} className='bg-[var(--ice)] text-[var(--aqua)] text-2xl rounded-sm p-4'>
+    <button
+      className='bg-[var(--ice)] text-[var(--aqua)] text-4xl rounded-xl p-6 w-fit my-4'
+      onClick={() => navigate(to)}
+    >
       {children}
     </button>
   )
