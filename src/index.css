@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+:root {
+  --aqua: #8ce1eb;
+  --grey: #737373;
+  --ice: #e3f8fa;
+  --navy: #222a59;
+}
+
 body {
   background-color: #222a59;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
