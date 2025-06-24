@@ -1,4 +1,3 @@
-import { FaGripfire, FaMedapps, FaRegSmile, FaRegThumbsUp, FaTools } from 'react-icons/fa'
 import { LuBrush, LuFlame, LuWrench, LuLightbulb, LuSparkle } from 'react-icons/lu'
 
 import { HomeMessage } from '../components/home-message'
