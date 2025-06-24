@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import { FaBriefcase, FaCodepen, FaFacebook, FaGithub, FaHome, FaInfo, FaLinkedin, FaMailBulk } from 'react-icons/fa'
+import { LuBriefcaseBusiness, LuCodepen, LuFacebook, LuGithub, LuHouse, LuInfo, LuLinkedin, LuMail } from 'react-icons/lu'
 
 import './App.css'
 import { About } from './pages/about'
@@ -15,10 +16,10 @@ function App() {
   return (
     <div className='grid grid-cols-[25%_1fr_25%] grid-rows-[14%_1fr_6%] h-screen'>
       <nav className='col-start-1 row-start-1 row-span-3 flex flex-col items-center my-4'>
-        <IconLink Icon={FaHome} label='home' to='/' />
-        <IconLink Icon={FaInfo} label='about' to='/about' />
-        <IconLink Icon={FaBriefcase} label='projects' to='/projects' />
-        <IconLink Icon={FaMailBulk} label='contact' to='/contact' />
+        <IconLink Icon={LuHouse} label='home' to='/' />
+        <IconLink Icon={LuInfo} label='about' to='/about' />
+        <IconLink Icon={LuBriefcaseBusiness} label='projects' to='/projects' />
+        <IconLink Icon={LuMail} label='contact' to='/contact' />
         <VerticalBar />
       </nav>
 
@@ -41,10 +42,10 @@ function App() {
 
       <aside className='col-start-3 row-start-1 row-span-3 flex flex-col items-center my-4'>
         <VerticalBar />
-        <IconLink Icon={FaFacebook} label='facebook' to='https://www.facebook.com/noe.hsu' />
-        <IconLink Icon={FaLinkedin} label='linkedin' to='https://www.linkedin.com/in/noe-hsu-7828a4208/' />
-        <IconLink Icon={FaGithub} label='github' to='https://github.com/noe13hsu' />
-        <IconLink Icon={FaCodepen} label='codepen' to='https://codepen.io/noe13hsu' />
+        <IconLink Icon={LuFacebook} label='facebook' to='https://www.facebook.com/noe.hsu' />
+        <IconLink Icon={LuLinkedin} label='linkedin' to='https://www.linkedin.com/in/noe-hsu-7828a4208/' />
+        <IconLink Icon={LuGithub} label='github' to='https://github.com/noe13hsu' />
+        <IconLink Icon={LuCodepen} label='codepen' to='https://codepen.io/noe13hsu' />
       </aside>
     </div>
   )

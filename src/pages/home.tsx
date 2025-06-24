@@ -1,4 +1,5 @@
 import { FaGripfire, FaMedapps, FaRegSmile, FaRegThumbsUp, FaTools } from 'react-icons/fa'
+import { LuBrush, LuFlame, LuWrench, LuLightbulb, LuSparkle } from 'react-icons/lu'
 
 import { HomeMessage } from '../components/home-message'
 import { Header } from '../components/header'
@@ -7,23 +8,23 @@ import { SubHeader } from '../components/sub-header'
 const INTERVAL = 200
 const messages = [
   {
-    Icon: FaGripfire,
+    Icon: LuFlame,
     message: <>I'm a passionate front end developer with <strong className='important'>4 years of experience in React and 1.5 years in TypeScript</strong>.</>
   },
     {
-    Icon: FaTools,
+    Icon: LuBrush,
     message: <>I've also worked with UI libraries such as <strong className='important'>Material UI, Bootstrap, and Tailwind</strong>, and have experience building components with plain CSS.</>
   },
     {
-    Icon: FaMedapps,
+    Icon: LuWrench,
     message: <>I thrive on building and improving meaningful applications - so far <strong className='important'>from revamping websites to developing a tracking system and a multiplayer poker game</strong>.</>
   },
     {
-    Icon: FaRegThumbsUp,
+    Icon: LuLightbulb,
     message: <>With a strong foundation in mathematics, I approach problem-solving with <strong className='important'>logical precision and creativity</strong>.</>
   },
     {
-    Icon: FaRegSmile,
+    Icon: LuSparkle,
     message: <>Coding is something I genuinely enjoy as it gives me a strong feeling of accomplishment, and I'm always <strong className='important'>excited to bring cool ideas to life through clean, efficient code</strong>.</>
   },
 ]
