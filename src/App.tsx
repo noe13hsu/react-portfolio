@@ -5,7 +5,7 @@ import './App.css'
 import { About } from './pages/about'
 import { Home } from './pages/home'
 import { IconLink } from './components/icon-link'
-import { Projects } from './pages/projects'
+import { Experience } from './pages/experience'
 import { Contact } from './pages/contact'
 import { VerticalBar } from './components/vertical-bar'
 import logo from './assets/images/logo.png'
@@ -35,21 +35,25 @@ const externalLinks = [
 
 const internalLinks = [
   {
+    element: <Home />,
     Icon: LuHouse,
     label: 'home',
     to: '/',
   },
   {
+    element: <About />,
     Icon: LuInfo,
     label: 'about',
     to: '/about',
   },
   {
+    element: <Experience />,
     Icon: LuBriefcaseBusiness,
-    label: 'projects',
-    to: '/projects',
+    label: 'experience',
+    to: '/experience',
   },
   {
+    element: <Contact />,
     Icon: LuMail,
     label: 'contact',
     to: '/contact',
@@ -70,10 +74,7 @@ function App() {
 
       <main className='col-start-2 row-start-2 flex flex-col items-center h-full min-h-0'>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
+          {internalLinks.map(({element, to}) => <Route element={element} path={to} />)}
         </Routes>
       </main>
 
