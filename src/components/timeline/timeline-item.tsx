@@ -1,5 +1,6 @@
 import { VerticalBar } from '../vertical-bar'
 import { Details } from './details'
+import { HorizontalBar } from './horizontal-bar'
 import { TimelineEntry } from './types'
 
 export const TimelineItem = ({item} : {item: TimelineEntry}) => {
@@ -10,7 +11,7 @@ export const TimelineItem = ({item} : {item: TimelineEntry}) => {
       {type === 'experience' && (
         <>
           <Details item={item} />
-          <div className='w-full h-1 bg-[var(--aqua)] m-auto' />
+          <HorizontalBar />
         </>
       )}
 
@@ -20,7 +21,7 @@ export const TimelineItem = ({item} : {item: TimelineEntry}) => {
 
       {type === 'education' && (
         <>
-          <div className='w-full h-1 bg-[var(--aqua)] m-auto' />
+          <HorizontalBar />
           <Details item={item} />
         </>
       )}
