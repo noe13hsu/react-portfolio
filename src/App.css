@@ -1,6 +1,22 @@
-:root {
-    --aqua: #8ce1eb;
-    --grey: #737373;
-    --ice: #e3f8fa;
-    --navy: #222a59;
+@import "tailwindcss";
+
+.important {
+  @apply text-[var(--aqua)] underline decoration-solid decoration-[var(--grey)];
+}
+
+@theme {
+  --animate-ripple: ripple 1s linear infinite;
+
+  @keyframes ripple {
+    0% {
+      outline: 0.2em solid rgba(140, 225, 235, 0.5);
+    }
+    25% {
+      outline: 0.3em solid rgba(140, 225, 235, 0.5);
+    }
+    60%,
+    100% {
+      outline: 0.4em solid rgba(140, 225, 235, 0);
+    }
+  }
 }
