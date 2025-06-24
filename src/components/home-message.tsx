@@ -8,7 +8,9 @@ export const HomeMessage = ({children, delay, Icon } : {children: ReactNode, del
 
   return (
     <div className={`flex mb-4 transition-opacity duration-500 ${shouldRender ? 'opacity-100' : 'opacity-0'}`}>
-      <Icon />
+      <div className='flex justify-center items-start'>
+        <Icon className='mt-1' />
+      </div>
       <p className='ml-4'>
         {children}
       </p>
