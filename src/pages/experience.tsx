@@ -1,6 +1,6 @@
 import { SubHeader } from '../components/sub-header'
 import { Header } from '../components/header'
-import { TimeLine } from '../components/timeline/timeline'
+import { TimeLine } from '../components/experience/timeline'
 
 export const Experience = () => {
   return (
