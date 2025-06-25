@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .important {
-  @apply text-[var(--aqua)] underline decoration-solid decoration-gray-600;
+  @apply text-[var(--aqua)] underline decoration-solid decoration-[var(--grey)];
 }
 
 @theme {
@@ -22,9 +22,9 @@
 }
 
 .border-top-left {
-  @apply before:content-[""] before:w-8 before:h-8 before:absolute before:border-t-3 before:border-l-3 before:border-gray-600 before:-left-2 before:-top-1
+  @apply before:content-[""] before:w-8 before:h-8 before:absolute before:border-t-3 before:border-l-3 before:border-[var(--grey)] before:-left-2 before:-top-1
 }
 
 .border-bottom-right {
-  @apply after:content-[""] after:w-8 after:h-8 after:absolute after:border-b-2 after:border-r-2 after:border-gray-600 after:-right-2 after:-bottom-1
+  @apply after:content-[""] after:w-8 after:h-8 after:absolute after:border-b-2 after:border-r-2 after:border-[var(--grey)] after:-right-2 after:-bottom-1
 }
