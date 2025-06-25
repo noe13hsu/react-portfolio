@@ -4,7 +4,7 @@ export const Form = () => {
   return (
     <form
       action='https://formsubmit.co/noe.hsu@gmail.com'
-      className='bg-[var(--grey)] p-6 rounded-lg space-y-4 mt-10 w-120'
+      className='bg-[var(--grey)] p-6 rounded-lg space-y-4 mt-10 w-full max-w-xl mx-auto'
       method='POST'
     >
       <fieldset>
