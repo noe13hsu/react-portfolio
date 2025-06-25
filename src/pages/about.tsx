@@ -43,7 +43,7 @@ export const About = () => {
         <FadeIn delay={200} className='grid grid-cols-3 gap-3 h-fit'>
           {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
         </FadeIn>
-        <FadeIn delay={400} className='grid grid-cols-1 gap-3 h-fit'>
+        <FadeIn delay={600} className='grid grid-cols-1 gap-3 h-fit'>
           {hobbies.map(hobby => <Badge key={hobby} className='text-[var(--ice)]' text={hobby} />)}
         </FadeIn>
       </div>
