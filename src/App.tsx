@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import { LuBriefcaseBusiness, LuCodepen, LuFacebook, LuGithub, LuHouse, LuInfo, LuLinkedin, LuMail } from 'react-icons/lu'
+import { TbBrandLeetcode } from 'react-icons/tb'
 
 import './App.css'
 import { About } from './pages/about'
@@ -30,6 +31,11 @@ const externalLinks = [
     Icon: LuCodepen,
     label: 'codepen',
     to: 'https://codepen.io/noe13hsu',
+  },
+  {
+    Icon: TbBrandLeetcode,
+    label: 'leetcode',
+    to: 'https://leetcode.com/u/user3088m/',
   },
 ]
 
