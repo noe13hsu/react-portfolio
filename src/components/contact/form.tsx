@@ -3,7 +3,7 @@ import { InputField } from './input-field'
 export const Form = () => {
   return (
     <form
-      action='https://formsubmit.co/0c1f57ba7b06fd50b889644eb30767b4'
+      action='https://formspree.io/f/myzjbpgz'
       className='bg-[var(--grey)] p-6 rounded-lg space-y-4 mt-10 w-full max-w-xl mx-auto'
       method='POST'
     >
