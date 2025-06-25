@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { IconType } from 'react-icons'
 
-import { useDelayedRender } from '../hooks'
+import { useDelayedRender } from '../../hooks'
 
 export const HomeMessage = ({children, delay, Icon } : {children: ReactNode, delay: number, Icon: IconType}) => {
   const shouldRender = useDelayedRender(delay)

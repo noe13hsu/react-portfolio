@@ -1,6 +1,6 @@
 import { LuBrush, LuFlame, LuWrench, LuLightbulb, LuSparkle } from 'react-icons/lu'
 
-import { HomeMessage } from '../components/home-message'
+import { HomeMessage } from '../components/home/home-message'
 import { Header } from '../components/header'
 import { SubHeader } from '../components/sub-header'
 
