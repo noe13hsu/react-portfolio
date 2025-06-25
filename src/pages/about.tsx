@@ -28,6 +28,7 @@ const skills = [
   'Lodash',
   'Ruby on Rails',
   'PostgreSQL',
+  'GitHub',
   'WordPress',
   'Figma',
 ]
