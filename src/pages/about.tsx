@@ -1,6 +1,7 @@
 import { SubHeader } from '../components/sub-header'
 import { Header } from '../components/header'
 import { Badge } from '../components/about/badge'
+import { DelayedRenderContainer } from '../components/delayed-render-container'
 
 const hobbies = [
   'Gaming',
@@ -39,12 +40,12 @@ export const About = () => {
       <Header text='About' />
       <SubHeader text='Skills & Hobbies' />
       <div className='grid grid-cols-[3fr_1fr] gap-10 mt-40'>
-        <div className='grid grid-cols-3 gap-3 h-fit'>
+        <DelayedRenderContainer delay={200} className='grid grid-cols-3 gap-3 h-fit'>
           {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
-        </div>
-        <div className='grid grid-cols-1 gap-3 h-fit'>
+        </DelayedRenderContainer>
+        <DelayedRenderContainer delay={400} className='grid grid-cols-1 gap-3 h-fit'>
           {hobbies.map(hobby => <Badge key={hobby} className='text-[var(--ice)]' text={hobby} />)}
-        </div>
+        </DelayedRenderContainer>
       </div>
     </>
   )
