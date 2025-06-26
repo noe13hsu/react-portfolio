@@ -14,7 +14,7 @@ export const TimelineItem = ({index, item} : {index: number, item: TimelineEntry
   const branchDelay = BRANCH_INITIAL_DELAY + DETAILS_BASE_DELAY * index
 
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-[1fr_4%_auto_4%_1fr] text-[var(--ice)]'>
+    <div className='timeline-item-layout text-[var(--ice)]'>
       {type === 'experience' && (
         <>
           <MobileBranch delay={branchDelay} />
