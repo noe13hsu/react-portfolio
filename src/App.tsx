@@ -1,5 +1,5 @@
 import './App.css'
-import { Aside } from 'components/aside'
+import { Aside } from './components/aside'
 import { Footer } from './components/footer'
 import { Header } from './components/header'
 import { Main } from './components/main'
