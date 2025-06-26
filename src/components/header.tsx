@@ -1,7 +1,13 @@
-export const Header = ({text} : {text: string}) => {
+import { Link } from 'react-router-dom'
+
+import logo from '../assets/images/logo.png'
+
+export const Header = () => {
   return (
-    <h1 className='font-bold text-6xl important mt-2 lg:mt-8 lg:text-8xl'>
-      {text}.
-    </h1>
+    <header className='flex justify-center items-center lg:col-start-2 lg:row-start-1'>
+      <Link to='/'>
+        <img alt='logo' className='w-20 lg:w-40' src={logo} />
+      </Link>
+    </header>
   )
 }

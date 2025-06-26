@@ -20,7 +20,7 @@ import { IconLink } from './components/icon-link'
 import { Experience } from './pages/experience'
 import { Contact } from './pages/contact'
 import { VerticalBar } from './components/vertical-bar'
-import logo from './assets/images/logo.png'
+import { Header } from './components/header'
 
 const externalLinks = [
   {
@@ -93,9 +93,7 @@ function App() {
         <VerticalBar />
       </nav>
 
-      <header className='flex justify-center items-center lg:col-start-2 lg:row-start-1'>
-        <Link to='/'><img alt='logo' className='w-20 lg:w-40' src={logo} /></Link>
-      </header>
+      <Header />
 
       <main className='flex flex-col items-center h-full min-h-0 lg:col-start-2 lg:row-start-2'>
         <Routes>
