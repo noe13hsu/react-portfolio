@@ -39,11 +39,11 @@ export const About = () => {
     <>
       <Title text='About' />
       <Subtitle text='Skills & Hobbies' />
-      <div className='grid grid-cols-1 gap-6 mt-10 p-2 overflow-y-auto scrollbar-hide lg:mt-40 lg:grid-cols-[3fr_1fr] lg:gap-10'>
-        <FadeIn delay={200} className='grid grid-cols-3 gap-3 h-fit'>
+      <div className='about-layout overflow-y-auto scrollbar-hide'>
+        <FadeIn delay={200} className='skills-layout'>
           {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
         </FadeIn>
-        <FadeIn delay={600} className='grid grid-cols-3 lg:grid-cols-1 gap-3 h-fit'>
+        <FadeIn delay={600} className='hobbies-layout'>
           {hobbies.map(hobby => <Badge key={hobby} className='text-[var(--ice)]' text={hobby} />)}
         </FadeIn>
       </div>

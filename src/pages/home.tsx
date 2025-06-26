@@ -37,7 +37,7 @@ export const Home = () => {
     <>
       <Title text='Noe Hsu' />
       <Subtitle text='Software developer' />
-      <div className='mt-10 p-2 flex-1 flex flex-col text-[var(--ice)] text-2xl overflow-y-auto scrollbar-hide lg:mt-40'>
+      <div className='home-layout text-[var(--ice)] text-2xl overflow-y-auto scrollbar-hide'>
         {messages.map(({Icon, message}, index) => (
           <HomeMessage delay={INTERVAL * (index + 1)} Icon={Icon}>
             {message}

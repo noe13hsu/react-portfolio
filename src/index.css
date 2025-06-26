@@ -25,3 +25,71 @@
          lg:grid-rows-[14%_1fr_6%]
          lg:h-screen;
 }
+
+.main-layout {
+  @apply flex flex-col items-center h-full min-h-0
+         lg:col-start-2
+         lg:row-start-2
+}
+
+.nav-layout {
+  @apply flex justify-between items-center m-2 gap-4
+         md:justify-start
+         lg:m-4
+         lg:col-start-1
+         lg:row-start-1
+         lg:row-span-3
+         lg:flex-col
+}
+
+.header-layout {
+  @apply flex justify-center items-center
+         lg:col-start-2
+         lg:row-start-1
+}
+
+.footer-layout {
+  @apply flex justify-center items-end col-start-1 row-start-5
+         lg:col-start-2
+         lg:row-start-3
+}
+
+.aside-layout {
+  @apply col-start-1 row-start-4 flex justify-between items-center m-2 gap-4
+         md:justify-end
+         lg:m-4
+         lg:col-start-3
+         lg:row-start-1
+         lg:row-span-3
+         lg:flex-col
+}
+
+.home-layout {
+  @apply mt-10 p-2 flex-1 flex flex-col
+         lg:mt-40
+}
+
+.about-layout {
+  @apply grid grid-cols-1 gap-6 mt-10 p-2
+         lg:grid-cols-[3fr_1fr]
+         lg:gap-10
+         lg:mt-40
+}
+
+.skills-layout {
+  @apply grid grid-cols-3 gap-3
+}
+
+.hobbies-layout {
+  @apply grid grid-cols-3 gap-3
+         lg:grid-cols-1
+}
+
+.timeline-layout {
+  @apply flex-1 flex flex-col mt-10 w-full
+}
+
+.timeline-item-layout {
+  @apply grid grid-cols-1
+         lg:grid-cols-[1fr_4%_auto_4%_1fr]
+}
