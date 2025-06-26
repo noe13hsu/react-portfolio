@@ -24,7 +24,7 @@ const messages = [
   },
   {
     Icon: LuLightbulb,
-    message: <>With a strong foundation in mathematics, I approach problem-solving with <strong className='important'>logical precision and creativity</strong>.</>
+    message: <>With a strong foundation in <strong className='important'>mathematics</strong>, I approach problem-solving with <strong className='important'>logical precision and creativity</strong>.</>
   },
   {
     Icon: LuSparkle,
