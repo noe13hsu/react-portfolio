@@ -9,7 +9,7 @@ export const HomeMessage = ({children, delay, Icon } : {children: ReactNode, del
       <div className='flex justify-center items-start'>
         <Icon className='mt-1' />
       </div>
-      <p className='ml-4'>
+      <p className='text-lg ml-4 lg:text-2xl'>
         {children}
       </p>
     </FadeIn>
