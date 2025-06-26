@@ -18,7 +18,7 @@ export const InputField = ({
   return (
     <div className={`flex ${isFieldSet ? 'flex-col-reverse' : 'flex-col'}`}>
       <label
-        className={`text-[var(--${isFieldSet ? 'ice' : 'aqua'})] text-${isFieldSet ? 'sm' : '2xl'} ${className}`}
+        className={`text-[var(--${isFieldSet ? 'ice' : 'aqua'})] text-${isFieldSet ? 'sm' : 'xl'} lg:text-${isFieldSet ? 'sm' : '2xl'} ${className}`}
         htmlFor={id}
       >
         {label}
