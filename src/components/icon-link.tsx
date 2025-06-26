@@ -1,7 +1,17 @@
 import { IconType } from 'react-icons'
 import { Link } from 'react-router-dom'
 
-export const IconLink = ({Icon, label, to} : {Icon: IconType, label: string, to: string}) => {
+export const IconLink = ({
+  download = false,
+  Icon,
+  label,
+  to,
+} : {
+  download?: boolean,
+  Icon: IconType,
+  label: string,
+  to: string,
+}) => {
   const isExternal = /^https?:\/\//.test(to)
 
   const button = (
@@ -10,16 +20,16 @@ export const IconLink = ({Icon, label, to} : {Icon: IconType, label: string, to:
     </button>
   )
 
-  if (isExternal) {
+  if (isExternal || download) {
     return (
-      <a className='my-4 cursor-default' href={to} rel='noopener noreferrer' target='_blank' >
+      <a className='my-4 cursor-default' download={download} href={to} rel='noopener noreferrer' target='_blank' title={label}>
         {button}
       </a>
     )
   }
 
   return (
-    <Link className='my-4 cursor-default' to={to}>
+    <Link className='my-4 cursor-default' title={label} to={to}>
       {button}
     </Link>
   )
