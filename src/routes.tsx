@@ -1,10 +1,5 @@
 import { TbBrandLeetcode } from 'react-icons/tb'
 
-import { About } from './pages/about'
-import { Home } from './pages/home'
-import { Experience } from './pages/experience'
-import { Contact } from './pages/contact'
-
 import {
   LuBriefcaseBusiness,
   LuCodepen,
@@ -16,6 +11,11 @@ import {
   LuLinkedin,
   LuMail,
 } from 'react-icons/lu'
+
+import { About } from './pages/about'
+import { Home } from './pages/home'
+import { Experience } from './pages/experience'
+import { Contact } from './pages/contact'
 
 export const externalLinks = [
   {
