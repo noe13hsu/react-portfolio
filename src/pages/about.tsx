@@ -1,5 +1,5 @@
-import { SubHeader } from '../components/sub-header'
-import { Header } from '../components/header'
+import { Subtitle } from '../components/subtitle'
+import { Title } from '../components/title'
 import { Badge } from '../components/about/badge'
 import { FadeIn } from '../components/fade-in'
 
@@ -37,8 +37,8 @@ const skills = [
 export const About = () => {
   return (
     <>
-      <Header text='About' />
-      <SubHeader text='Skills & Hobbies' />
+      <Title text='About' />
+      <Subtitle text='Skills & Hobbies' />
       <div className='grid grid-cols-1 gap-6 mt-10 p-2 overflow-y-auto scrollbar-hide lg:mt-40 lg:grid-cols-[3fr_1fr] lg:gap-10'>
         <FadeIn delay={200} className='grid grid-cols-3 gap-3 h-fit'>
           {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
