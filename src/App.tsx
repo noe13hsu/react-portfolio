@@ -104,7 +104,7 @@ function App() {
       </main>
 
       <footer className='text-xs col-start-1 row-start-5 flex justify-center items-end lg:col-start-2 lg:row-start-3 lg:text-lg'>
-        <p className='text-[var(--ice)] m-2'>&copy; 2025 All rights reserved.</p>
+        <p className='text-[var(--ice)] mb-1 lg:m-2'>&copy; 2025 All rights reserved.</p>
       </footer>
 
       <aside className='col-start-1 row-start-4 flex justify-between items-center m-2 gap-4 lg:m-4 lg:col-start-3 lg:row-start-1 lg:row-span-3 lg:flex-col'>
