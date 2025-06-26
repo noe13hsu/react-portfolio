@@ -17,7 +17,7 @@ export const IconLink = ({
   const button = (
     <button
       aria-label={label}
-      className='bg-[var(--ice)] text-[var(--aqua)] text-4xl rounded-xl p-6 w-fit hover:animate-ripple'
+      className='bg-[var(--ice)] text-[var(--aqua)] p-4 text-3xl rounded-xl w-fit lg:text-4xl lg:p-6 hover:animate-ripple'
     >
       <Icon />
     </button>
@@ -26,7 +26,7 @@ export const IconLink = ({
   if (isExternal || download) {
     return (
       <a
-        className='my-4 cursor-default'
+        className='cursor-default'
         download={download}
         href={to}
         rel='noopener noreferrer'
@@ -39,7 +39,7 @@ export const IconLink = ({
   }
 
   return (
-    <Link className='my-4 cursor-default' title={label} to={to}>
+    <Link className='cursor-default' title={label} to={to}>
       {button}
     </Link>
   )
