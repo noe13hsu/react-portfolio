@@ -15,14 +15,24 @@ export const IconLink = ({
   const isExternal = /^https?:\/\//.test(to)
 
   const button = (
-    <button aria-label={label} className='bg-[var(--ice)] text-[var(--aqua)] text-4xl rounded-xl p-6 w-fit hover:animate-ripple'>
+    <button
+      aria-label={label}
+      className='bg-[var(--ice)] text-[var(--aqua)] text-4xl rounded-xl p-6 w-fit hover:animate-ripple'
+    >
       <Icon />
     </button>
   )
 
   if (isExternal || download) {
     return (
-      <a className='my-4 cursor-default' download={download} href={to} rel='noopener noreferrer' target='_blank' title={label}>
+      <a
+        className='my-4 cursor-default'
+        download={download}
+        href={to}
+        rel='noopener noreferrer'
+        target='_blank'
+        title={label}
+      >
         {button}
       </a>
     )

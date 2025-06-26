@@ -19,7 +19,7 @@ export const TimelineItem = ({index, item} : {index: number, item: TimelineEntry
           <FadeIn delay={detailsDelay}>
             <Details item={item} />
           </FadeIn>
-          <FadeIn delay={barDelay} className='flex'>
+          <FadeIn className='flex' delay={barDelay}>
             <HorizontalBar />
           </FadeIn>
         </>
@@ -31,7 +31,7 @@ export const TimelineItem = ({index, item} : {index: number, item: TimelineEntry
 
       {type === 'education' && (
         <>
-          <FadeIn delay={barDelay} className='flex'>
+          <FadeIn className='flex' delay={barDelay}>
             <HorizontalBar />
           </FadeIn>
           <FadeIn delay={detailsDelay}>
