@@ -18,3 +18,10 @@
 .truncate-one-line {
   @apply whitespace-nowrap overflow-hidden text-ellipsis;
 }
+
+.app-layout {
+  @apply grid grid-cols-1 grid-rows-[auto_auto_6fr_auto_auto] h-[100dvh]
+         lg:grid-cols-[25%_1fr_25%]
+         lg:grid-rows-[14%_1fr_6%]
+         lg:h-screen;
+}
