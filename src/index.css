@@ -7,10 +7,6 @@
   --navy: #222a59;
 }
 
-body {
-  background-color: #222a59;
-}
-
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
