@@ -25,27 +25,27 @@ import logo from './assets/images/logo.png'
 const externalLinks = [
   {
     Icon: LuFacebook,
-    label: 'facebook',
+    label: 'Facebook',
     to: 'https://www.facebook.com/noe.hsu',
   },
   {
     Icon: LuLinkedin,
-    label: 'linkedin',
+    label: 'Linkedin',
     to: 'https://www.linkedin.com/in/noe-hsu-7828a4208/',
   },
   {
     Icon: LuGithub,
-    label: 'github',
+    label: 'Github',
     to: 'https://github.com/noe13hsu',
   },
   {
     Icon: LuCodepen,
-    label: 'codepen',
+    label: 'Codepen',
     to: 'https://codepen.io/noe13hsu',
   },
   {
     Icon: TbBrandLeetcode,
-    label: 'leetcode',
+    label: 'Leetcode',
     to: 'https://leetcode.com/u/user3088m/',
   },
 ]
@@ -54,31 +54,31 @@ const internalLinks = [
   {
     element: <Home />,
     Icon: LuHouse,
-    label: 'home',
+    label: 'Home',
     to: '/',
   },
   {
     element: <About />,
     Icon: LuInfo,
-    label: 'about',
+    label: 'About',
     to: '/about',
   },
   {
     element: <Experience />,
     Icon: LuBriefcaseBusiness,
-    label: 'experience',
+    label: 'Experience',
     to: '/experience',
   },
   {
     element: <Contact />,
     Icon: LuMail,
-    label: 'contact',
+    label: 'Contact',
     to: '/contact',
   },
   {
     download: true,
     Icon: LuDownload,
-    label: 'download cv',
+    label: 'Download CV',
     to: '/cv.pdf',
   },
 ]
