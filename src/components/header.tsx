@@ -1,6 +1,6 @@
 export const Header = ({text} : {text: string}) => {
   return (
-    <h1 className='font-bold text-8xl important mt-8'>
+    <h1 className='font-bold text-6xl important mt-2 lg:mt-8 lg:text-8xl'>
       {text}.
     </h1>
   )
