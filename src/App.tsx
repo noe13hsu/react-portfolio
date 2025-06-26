@@ -85,29 +85,29 @@ const internalLinks = [
 
 function App() {
   return (
-    <div className='grid grid-cols-[25%_1fr_25%] grid-rows-[14%_1fr_6%] h-screen'>
-      <nav className='col-start-1 row-start-1 row-span-3 flex flex-col items-center my-4'>
+    <div className='grid grid-rows-[auto_auto_6fr_auto_auto] grid-cols-1 h-[100dvh] lg:h-screen lg:grid-cols-[25%_1fr_25%] lg:grid-rows-[14%_1fr_6%]'>
+      <nav className='flex justify-between items-center m-2 gap-4 lg:m-4 lg:col-start-1 lg:row-start-1 lg:row-span-3 lg:flex-col '>
         {internalLinks.map(({download, Icon, label, to}) => (
           <IconLink key={label} download={download} Icon={Icon} label={label} to={to} />
         ))}
         <VerticalBar />
       </nav>
 
-      <header className='col-start-2 row-start-1 flex justify-center items-center'>
-        <Link to='/'><img src={logo} alt='logo' /></Link>
+      <header className='flex justify-center items-center lg:col-start-2 lg:row-start-1'>
+        <Link to='/'><img alt='logo' className='w-20 lg:w-40' src={logo} /></Link>
       </header>
 
-      <main className='col-start-2 row-start-2 flex flex-col items-center h-full min-h-0'>
+      <main className='flex flex-col items-center h-full min-h-0 lg:col-start-2 lg:row-start-2'>
         <Routes>
           {internalLinks.map(({element, to}) => <Route element={element} path={to} />)}
         </Routes>
       </main>
 
-      <footer className='col-start-2 row-start-3 flex justify-center items-end'>
+      <footer className='text-xs col-start-1 row-start-5 flex justify-center items-end lg:col-start-2 lg:row-start-3 lg:text-lg'>
         <p className='text-[var(--ice)] m-2'>&copy; 2025 All rights reserved.</p>
       </footer>
 
-      <aside className='col-start-3 row-start-1 row-span-3 flex flex-col items-center my-4'>
+      <aside className='col-start-1 row-start-4 flex justify-between items-center m-2 gap-4 lg:m-4 lg:col-start-3 lg:row-start-1 lg:row-span-3 lg:flex-col'>
         <VerticalBar />
         {externalLinks.map(({Icon, label, to}) => <IconLink key={label} Icon={Icon} label={label} to={to} />)}
       </aside>
