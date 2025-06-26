@@ -1,6 +1,17 @@
 import { Link, Route, Routes } from 'react-router-dom'
-import { LuBriefcaseBusiness, LuCodepen, LuFacebook, LuGithub, LuHouse, LuInfo, LuLinkedin, LuMail } from 'react-icons/lu'
 import { TbBrandLeetcode } from 'react-icons/tb'
+
+import {
+  LuBriefcaseBusiness,
+  LuCodepen,
+  LuDownload,
+  LuFacebook,
+  LuGithub,
+  LuHouse,
+  LuInfo,
+  LuLinkedin,
+  LuMail,
+} from 'react-icons/lu'
 
 import './App.css'
 import { About } from './pages/about'
@@ -64,13 +75,21 @@ const internalLinks = [
     label: 'contact',
     to: '/contact',
   },
+  {
+    download: true,
+    Icon: LuDownload,
+    label: 'download cv',
+    to: '/cv.pdf',
+  },
 ]
 
 function App() {
   return (
     <div className='grid grid-cols-[25%_1fr_25%] grid-rows-[14%_1fr_6%] h-screen'>
       <nav className='col-start-1 row-start-1 row-span-3 flex flex-col items-center my-4'>
-        {internalLinks.map(({Icon, label, to}) => <IconLink key={label} Icon={Icon} label={label} to={to} />)}
+        {internalLinks.map(({download, Icon, label, to}) => (
+          <IconLink key={label} download={download} Icon={Icon} label={label} to={to} />
+        ))}
         <VerticalBar />
       </nav>
 
