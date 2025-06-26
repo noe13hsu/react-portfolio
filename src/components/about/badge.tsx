@@ -1,6 +1,8 @@
 export const Badge = ({className = '', text} : {className?: string, text: string}) => {
   return (
-    <span className={`inline-block p-4 text-2xl text-center bg-[var(--grey)] rounded-md ${className}`}>
+    <span
+      className={`${className} truncate-one-line inline-block p-2 text-lg text-center bg-[var(--grey)] rounded-md lg:p-4 lg:text-2xl`}
+    >
       {text}
     </span>
   )
