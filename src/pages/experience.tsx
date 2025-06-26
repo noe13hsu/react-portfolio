@@ -1,12 +1,12 @@
-import { SubHeader } from '../components/sub-header'
-import { Header } from '../components/header'
+import { Subtitle } from '../components/subtitle'
+import { Title } from '../components/title'
 import { TimeLine } from '../components/experience/timeline'
 
 export const Experience = () => {
   return (
     <>
-      <Header text='Experience' />
-      <SubHeader text='Work & Education' />
+      <Title text='Experience' />
+      <Subtitle text='Work & Education' />
       <TimeLine />
     </>
   )

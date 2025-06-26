@@ -1,12 +1,12 @@
-import { SubHeader } from '../components/sub-header'
-import { Header } from '../components/header'
+import { Subtitle } from '../components/subtitle'
+import { Title } from '../components/title'
 import { Form } from '../components/contact/form'
 
 export const Contact = () => {
   return (
     <>
-      <Header text='Contact' />
-      <SubHeader text={'Let\'s connect'} />
+      <Title text='Contact' />
+      <Subtitle text={'Let\'s connect'} />
       <Form />
     </>
   )
