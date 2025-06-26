@@ -4,11 +4,11 @@ export const Form = () => {
   return (
     <form
       action='https://formspree.io/f/myzjbpgz'
-      className='bg-[var(--grey)] p-6 rounded-lg space-y-4 mt-10 w-full max-w-xl mx-auto'
+      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 mt-10 w-[90%] overflow-y-auto mx-auto scrollbar-hide lg:w-full lg:max-w-xl lg:p-6'
       method='POST'
     >
       <fieldset>
-        <legend className='text-[var(--aqua)] text-2xl'>Name</legend>
+        <legend className='text-xl text-[var(--aqua)] lg:text-2xl'>Name</legend>
         <div id='name-field-set' className='grid grid-cols-2 gap-4'>
           <InputField autoComplete='given-name' className='self-end' id='first-name' isFieldSet label='First Name' />
           <InputField autoComplete='family-name' className='self-end' id='last-name' isFieldSet label='Last Name' />
@@ -20,7 +20,7 @@ export const Form = () => {
       <InputField id='subject' label='Subject' />
 
       <div className='flex flex-col'>
-        <label className='text-[var(--aqua)] text-2xl' htmlFor='message'>Message</label>
+        <label className='text-[var(--aqua)] text-xl lg:text-2xl' htmlFor='message'>Message</label>
         <textarea className='bg-[var(--ice)] h-40 rounded-xs' id='message' name='message' required />
       </div>
 
