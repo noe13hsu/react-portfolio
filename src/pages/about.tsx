@@ -40,10 +40,10 @@ export const About = () => {
       <Title text='About' />
       <Subtitle text='Skills & Hobbies' />
       <div className='about-layout overflow-y-auto scrollbar-hide'>
-        <FadeIn delay={200} className='skills-layout'>
+        <FadeIn delay={200} className='about-section-layout'>
           {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
         </FadeIn>
-        <FadeIn delay={600} className='hobbies-layout'>
+        <FadeIn delay={600} className='about-section-layout'>
           {hobbies.map(hobby => <Badge key={hobby} className='text-[var(--ice)]' text={hobby} />)}
         </FadeIn>
       </div>
