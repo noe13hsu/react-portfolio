@@ -50,7 +50,8 @@
          lg:col-start-1
          lg:row-start-1
          lg:row-span-3
-         lg:flex-col;
+         lg:flex-col
+         lg:landscape:gap-4;
 }
 
 .aside-layout {
@@ -66,7 +67,8 @@
          lg:col-start-3
          lg:row-start-1
          lg:row-span-3
-         lg:flex-col;
+         lg:flex-col
+         lg:landscape:gap-4;
 }
 
 .header-layout {
