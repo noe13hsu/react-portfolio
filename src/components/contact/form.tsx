@@ -4,7 +4,7 @@ export const Form = () => {
   return (
     <form
       action='https://formspree.io/f/myzjbpgz'
-      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 w-[90%] mx-auto md:w-[60%] lg:max-w-xl lg:p-6'
+      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 w-[90%] mx-auto md:w-[70%] lg:portrait:w-[85%] lg:max-w-xl lg:p-6'
       method='POST'
     >
       <fieldset>

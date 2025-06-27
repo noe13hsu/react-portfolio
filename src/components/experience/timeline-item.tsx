@@ -23,7 +23,7 @@ export const TimelineItem = ({index, item} : {index: number, item: TimelineEntry
         </>
       )}
 
-      <div className='hidden flex justify-center lg:block lg:col-start-3'>
+      <div className='hidden flex justify-center lg:landscape:block lg:landscape:col-start-3'>
         <VerticalBar />
       </div>
 
