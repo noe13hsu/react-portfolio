@@ -104,9 +104,10 @@
 
 .timeline-item-layout {
   @apply grid grid-cols-1
-         lg:grid-cols-[1fr_4%_auto_4%_1fr];
+         lg:landscape:grid-cols-[1fr_4%_auto_4%_1fr];
 }
 
 .content-mt {
-  @apply mt-10
+  @apply mt-4
+         lg:mt-10
 }
