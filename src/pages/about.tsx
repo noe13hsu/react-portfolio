@@ -39,7 +39,7 @@ export const About = () => {
     <>
       <Title text='About' />
       <Subtitle text='Skills & Hobbies' />
-      <div className='about-layout overflow-y-auto scrollbar-hide'>
+      <div className='about-layout content-mt overflow-y-auto scrollbar-hide'>
         <FadeIn delay={200} className='about-section-layout'>
           {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
         </FadeIn>

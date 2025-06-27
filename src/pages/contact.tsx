@@ -7,7 +7,9 @@ export const Contact = () => {
     <>
       <Title text='Contact' />
       <Subtitle text={'Let\'s connect'} />
-      <Form />
+      <div className='content-mt overflow-y-auto scrollbar-hide w-full'>
+        <Form />
+      </div>
     </>
   )
 }
