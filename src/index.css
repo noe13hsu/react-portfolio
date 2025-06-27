@@ -71,18 +71,12 @@
 
 .about-layout {
   @apply grid grid-cols-1 gap-6 mt-10 p-2
-         lg:grid-cols-[3fr_1fr]
          lg:gap-10
          lg:mt-40
 }
 
-.skills-layout {
+.about-section-layout {
   @apply grid grid-cols-3 gap-3
-}
-
-.hobbies-layout {
-  @apply grid grid-cols-3 gap-3
-         lg:grid-cols-1
 }
 
 .timeline-layout {
