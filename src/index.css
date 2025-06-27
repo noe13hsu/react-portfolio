@@ -21,6 +21,9 @@
 
 .app-layout {
   @apply grid grid-cols-1 grid-rows-[auto_auto_6fr_auto_auto] h-[100dvh]
+         landscape:grid-cols-[25%_1fr_25%]
+         landscape:grid-rows-[14%_1fr_6%]
+         landscape:h-screen
          lg:grid-cols-[25%_1fr_25%]
          lg:grid-rows-[14%_1fr_6%]
          lg:h-screen;
@@ -28,62 +31,82 @@
 
 .main-layout {
   @apply flex flex-col items-center h-full min-h-0
+         landscape:col-start-2
+         landscape:row-start-2
          lg:col-start-2
-         lg:row-start-2
+         lg:row-start-2;
 }
 
 .nav-layout {
   @apply flex justify-between items-center m-2 gap-4
          md:justify-start
+         landscape:gap-2
+         landscape:col-start-1
+         landscape:row-start-1
+         landscape:row-span-3
+         landscape:flex-col
+         landscape:justify-between
          lg:m-4
          lg:col-start-1
          lg:row-start-1
          lg:row-span-3
-         lg:flex-col
-}
-
-.header-layout {
-  @apply flex justify-center items-center
-         lg:col-start-2
-         lg:row-start-1
-}
-
-.footer-layout {
-  @apply flex justify-center items-end col-start-1 row-start-5
-         lg:col-start-2
-         lg:row-start-3
+         lg:flex-col;
 }
 
 .aside-layout {
   @apply col-start-1 row-start-4 flex justify-between items-center m-2 gap-4
          md:justify-end
+         landscape:gap-2
+         landscape:col-start-3
+         landscape:row-start-1
+         landscape:row-span-3
+         landscape:flex-col
+         landscape:justify-between
          lg:m-4
          lg:col-start-3
          lg:row-start-1
          lg:row-span-3
-         lg:flex-col
+         lg:flex-col;
+}
+
+.header-layout {
+  @apply flex justify-center items-center
+         landscape:col-start-2
+         landscape:row-start-1
+         lg:col-start-2
+         lg:row-start-1;
+}
+
+.footer-layout {
+  @apply flex justify-center items-end col-start-1 row-start-5
+         landscape:col-start-2
+         landscape:row-start-3
+         lg:col-start-2
+         lg:row-start-3;
 }
 
 .home-layout {
-  @apply mt-10 p-2 flex-1 flex flex-col
-         lg:mt-40
+  @apply p-2 flex-1 flex flex-col
 }
 
 .about-layout {
-  @apply grid grid-cols-1 gap-6 mt-10 p-2
+  @apply grid grid-cols-1 gap-6 p-2
          lg:gap-10
-         lg:mt-40
 }
 
 .about-section-layout {
-  @apply grid grid-cols-3 gap-3
+  @apply grid grid-cols-3 gap-3;
 }
 
 .timeline-layout {
-  @apply flex-1 flex flex-col mt-10 w-full
+  @apply flex-1 flex flex-col w-full;
 }
 
 .timeline-item-layout {
   @apply grid grid-cols-1
-         lg:grid-cols-[1fr_4%_auto_4%_1fr]
+         lg:grid-cols-[1fr_4%_auto_4%_1fr];
+}
+
+.content-mt {
+  @apply mt-10
 }

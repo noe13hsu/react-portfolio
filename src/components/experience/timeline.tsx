@@ -85,7 +85,7 @@ const timelineItems: TimelineEntry[]  = [
 
 export const TimeLine = () => {
   return (
-    <div className='timeline-layout relative overflow-y-auto scrollbar-hide'>
+    <div className='timeline-layout content-mt relative overflow-y-auto scrollbar-hide'>
       {timelineItems.map((item, index) => <TimelineItem key={index} index={index} item={item} />)}
     </div>
   )
