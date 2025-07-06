@@ -7,7 +7,7 @@ export const FadeIn = ({children, className = '', delay} : {children: ReactNode,
     const timeout = setTimeout(() => setIsVisible(true), delay)
 
     return () => clearTimeout(timeout)
-  })
+  }, [delay])
 
   return (
     <div className={`transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'} ${className}`}>
