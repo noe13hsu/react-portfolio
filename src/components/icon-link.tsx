@@ -18,6 +18,7 @@ export const IconLink = ({
     <button
       aria-label={label}
       className='bg-[var(--ice)] text-[var(--aqua)] p-4 text-3xl rounded-xl w-fit lg:text-4xl lg:p-6 hover:animate-ripple'
+      type="button"
     >
       <Icon />
     </button>
