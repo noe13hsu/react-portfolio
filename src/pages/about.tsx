@@ -1,7 +1,7 @@
 import { Subtitle } from '../components/subtitle'
 import { Title } from '../components/title'
-import { Skills } from 'components/about/skills'
-import { Hobbies } from 'components/about/hobbies'
+import { Skills } from '../components/about/skills'
+import { Hobbies } from '../components/about/hobbies'
 
 export const About = () => {
   return (

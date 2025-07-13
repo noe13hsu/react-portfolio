@@ -1,4 +1,4 @@
-import { FadeIn } from 'components/fade-in'
+import { FadeIn } from '../fade-in'
 import { Badge } from './badge'
 
 const skills = [
