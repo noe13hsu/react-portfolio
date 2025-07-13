@@ -1,4 +1,3 @@
-import { FadeIn } from '../fade-in'
 import { MobileBranch } from './mobile-branch'
 import { Details } from './details'
 import { TimelineEntry } from './types'
