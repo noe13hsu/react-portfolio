@@ -8,7 +8,7 @@ export const Main = () => {
     <main className='main-layout'>
       <Routes>
         {internalLinks.map(({element, to}) => <Route element={element} path={to} />)}
-        <Route element={<NotFound />} path={'*'} />
+        <Route element={<NotFound />} path='*' />
       </Routes>
     </main>
   )
