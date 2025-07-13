@@ -91,6 +91,10 @@
          lg:row-start-3;
 }
 
+.not-found-layout {
+  @apply grid grid-cols-4
+}
+
 .home-layout {
   @apply p-2 flex-1 flex flex-col
 }
