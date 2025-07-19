@@ -7,9 +7,7 @@ export const Contact = () => {
     <>
       <Header subTitle={'Let\'s connect'} title='Contact' />
       <Main>
-        <div className='content-mt overflow-y-auto scrollbar-hide w-full'>
           <Form />
-        </div>
       </Main>
     </>
   )

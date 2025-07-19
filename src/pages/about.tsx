@@ -9,7 +9,7 @@ export const About = () => {
     <>
       <Header subTitle='Skills & Hobbies' title='About' />
       <Main>
-        <div className='about-layout content-mt overflow-y-auto scrollbar-hide'>
+        <div className='about-layout'>
           <Skills />
           <Hobbies />
         </div>
