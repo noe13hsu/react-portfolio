@@ -25,7 +25,7 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <FadeIn delay={200} className='about-section-layout'>
+    <FadeIn className='about-section-layout' delay={200}>
       {skills.map(skill => <Badge key={skill} className='text-[var(--aqua)]' text={skill} />)}
     </FadeIn>
   )

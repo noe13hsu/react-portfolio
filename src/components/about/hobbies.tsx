@@ -12,7 +12,7 @@ const hobbies = [
 
 export const Hobbies = () => {
   return (
-    <FadeIn delay={600} className='about-section-layout'>
+    <FadeIn className='about-section-layout' delay={600}>
       {hobbies.map(hobby => <Badge key={hobby} className='text-[var(--ice)]' text={hobby} />)}
     </FadeIn>
   )
