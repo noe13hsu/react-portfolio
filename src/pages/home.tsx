@@ -1,8 +1,8 @@
 import { LuBrush, LuFlame, LuWrench, LuLightbulb, LuShuffle, LuSparkle } from 'react-icons/lu'
 
 import { HomeMessage } from '../components/home/home-message'
-import { Title } from '../components/title'
-import { Subtitle } from '../components/subtitle'
+import { Header } from '../components/header'
+import { Main } from '../components/main'
 
 const INTERVAL = 200
 const messages = [
@@ -35,15 +35,16 @@ const messages = [
 export const Home = () => {
   return (
     <>
-      <Title text='Noe Hsu' />
-      <Subtitle text='Software developer' />
-      <div className='home-layout content-mt text-[var(--ice)] text-2xl overflow-y-auto scrollbar-hide'>
-        {messages.map(({Icon, message}, index) => (
-          <HomeMessage delay={INTERVAL * (index + 1)} Icon={Icon}>
-            {message}
-          </HomeMessage>
-        ))}
-      </div>
+      <Header subTitle='Software developer' title='Noe Hsu' />
+      <Main>
+        <div className='home-layout content-mt text-[var(--ice)] text-2xl overflow-y-auto scrollbar-hide'>
+          {messages.map(({Icon, message}, index) => (
+            <HomeMessage delay={INTERVAL * (index + 1)} Icon={Icon}>
+              {message}
+            </HomeMessage>
+          ))}
+        </div>
+      </Main>
     </>
   )
 }

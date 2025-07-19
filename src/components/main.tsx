@@ -1,15 +1,9 @@
-import { Route, Routes } from 'react-router-dom'
+import { ReactNode } from 'react'
 
-import { internalLinks } from '../routes'
-import { NotFound } from '../pages/not-found'
-
-export const Main = () => {
+export const Main = ({children} : {children: ReactNode}) => {
   return (
     <main className='main-layout'>
-      <Routes>
-        {internalLinks.map(({element, to}) => <Route element={element} path={to} />)}
-        <Route element={<NotFound />} path='*' />
-      </Routes>
+      {children}
     </main>
   )
 }

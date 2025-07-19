@@ -26,10 +26,10 @@
 .app-layout {
   @apply grid grid-cols-1 grid-rows-[auto_auto_6fr_auto_auto] h-[100dvh]
          landscape:grid-cols-[25%_1fr_25%]
-         landscape:grid-rows-[14%_1fr_6%]
+         landscape:grid-rows-[24%_1fr_6%]
          landscape:h-screen
          lg:grid-cols-[25%_1fr_25%]
-         lg:grid-rows-[14%_1fr_6%]
+         lg:grid-rows-[20%_1fr_6%]
          lg:h-screen;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .header-layout {
-  @apply flex justify-center items-center
+  @apply flex flex-col justify-center items-center
          landscape:col-start-2
          landscape:row-start-1
          lg:col-start-2
@@ -92,16 +92,16 @@
 }
 
 .not-found-layout {
-  @apply grid grid-cols-4
+  @apply grid grid-cols-4;
 }
 
 .home-layout {
-  @apply p-2 flex-1 flex flex-col
+  @apply p-2 flex-1 flex flex-col;
 }
 
 .about-layout {
-  @apply grid grid-cols-1 gap-6 p-2
-         lg:gap-10
+  @apply flex flex-col gap-6 p-2
+         lg:gap-10;
 }
 
 .about-section-layout {
@@ -120,5 +120,5 @@
 .content-mt {
   @apply mt-4
          md:mt-10
-         lg:mt-20
+         lg:mt-20;
 }

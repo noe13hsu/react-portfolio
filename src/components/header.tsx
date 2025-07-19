@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Title } from './title'
+import { Subtitle } from './subtitle'
 
-import logo from '../assets/images/logo.png'
-
-export const Header = () => {
+export const Header = ({subTitle, title } : {subTitle: string, title: string}) => {
   return (
     <header className='header-layout'>
-      <Link to='/'>
-        <img alt='logo' className='w-20 md:w-30 lg:w-40' src={logo} />
-      </Link>
+      <Title text={title} />
+      <Subtitle text={subTitle} />
     </header>
   )
 }
