@@ -4,7 +4,8 @@ import { TimelineEntry } from './types'
 const timelineItems: TimelineEntry[]  = [
   {
     info: [
-      'Convert legacy JavaScript/CoffeeScript poker app to modern React and Redux.',
+      'Convert legacy JavaScript and CoffeeScript multiplayer poker app to modern React.',
+      'Manage complex poker game state with Redux to ensure consistent gameplay and smooth UX.',
       'Develop common components including a modal and a card component to replace tables on mobile.',
       'Build new features including a hand history replayer and bonus claimer.',
       'Maintain and update event translator to ensure accurate game event handling.',
