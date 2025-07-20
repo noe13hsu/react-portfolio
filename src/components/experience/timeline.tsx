@@ -85,8 +85,8 @@ const timelineItems: TimelineEntry[]  = [
 
 export const TimeLine = () => {
   return (
-    <div className='timeline-layout'>
+    <>
       {timelineItems.map((item, index) => <TimelineItem key={index} index={index} item={item} />)}
-    </div>
+    </>
   )
 }

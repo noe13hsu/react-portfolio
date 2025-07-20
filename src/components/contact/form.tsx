@@ -4,7 +4,7 @@ export const Form = () => {
   return (
     <form
       action='https://formspree.io/f/myzjbpgz'
-      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 w-[90%] mx-auto md:w-[70%] lg:portrait:w-[85%] lg:max-w-xl lg:p-6'
+      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 lg:p-6'
       method='POST'
     >
       <fieldset>
@@ -25,7 +25,7 @@ export const Form = () => {
       </div>
 
       <div className='flex justify-center'>
-        <button className='px-6 py-2 bg-[var(--aqua)] hover:animate-ripple rounded-sm' id='send-button' type='submit'>
+        <button className='px-8 py-3 bg-[var(--aqua)] rounded-sm text-lg hover:animate-ripple lg:text-xl' id='send-button' type='submit'>
           Send
         </button>
       </div>

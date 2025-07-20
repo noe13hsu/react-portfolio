@@ -8,11 +8,9 @@ export const About = () => {
   return (
     <>
       <Header subTitle='Skills & Hobbies' title='About' />
-      <Main>
-        <div className='about-layout'>
-          <Skills />
-          <Hobbies />
-        </div>
+      <Main className='about-layout lg:px-10'>
+        <Skills />
+        <Hobbies />
       </Main>
     </>
   )

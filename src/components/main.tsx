@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
 
-export const Main = ({children} : {children: ReactNode}) => {
+export const Main = ({children, className = ''} : {children: ReactNode, className?: string}) => {
   return (
-    <main className='main-layout content-mt overflow-y-auto scrollbar-hide'>
+    <main className={`content-mt overflow-y-auto scrollbar-hide mx-auto ${className}`}>
       {children}
     </main>
   )

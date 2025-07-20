@@ -6,7 +6,7 @@ export const Experience = () => {
   return (
     <>
       <Header subTitle='Work & Education' title='Experience' />
-      <Main>
+      <Main className='timeline-layout'>
         <TimeLine />
       </Main>
     </>

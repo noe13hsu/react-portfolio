@@ -24,8 +24,9 @@
 }
 
 .app-layout {
-  @apply grid grid-cols-1 grid-rows-[auto_auto_6fr_auto_auto] h-[100dvh] gap-2
-         lg:landscape:grid-cols-[20%_1fr_20%]
+  @apply grid grid-rows-[auto_auto_6fr_auto_auto] h-[100dvh] gap-2 p-2
+         sm:p-4
+         lg:landscape:grid-cols-[25%_1fr_25%]
          lg:landscape:grid-rows-[auto_1fr_auto];
 }
 
@@ -76,16 +77,17 @@
 }
 
 .home-layout {
-  @apply p-2 flex-1 flex flex-col;
+  @apply flex-1 flex flex-col;
 }
 
 .about-layout {
-  @apply flex flex-col gap-6 p-2
+  @apply flex flex-col gap-6
          lg:gap-10;
 }
 
 .about-section-layout {
-  @apply grid grid-cols-3 gap-3;
+  @apply grid grid-cols-3 gap-2
+         lg:gap-4;
 }
 
 .timeline-layout {

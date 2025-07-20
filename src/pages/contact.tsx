@@ -7,7 +7,7 @@ export const Contact = () => {
     <>
       <Header subTitle={'Let\'s connect'} title='Contact' />
       <Main>
-          <Form />
+        <Form />
       </Main>
     </>
   )
