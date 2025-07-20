@@ -26,8 +26,10 @@
 .app-layout {
   @apply grid grid-rows-[auto_auto_6fr_auto_auto] h-[100dvh] gap-2 p-2
          sm:p-4
-         lg:landscape:grid-cols-[25%_1fr_25%]
-         lg:landscape:grid-rows-[auto_1fr_auto];
+         lg:landscape:grid-cols-[auto_1fr_auto]
+         xl:landscape:grid-cols-[10%_1fr_10%]
+         xl:landscape:grid-rows-[auto_1fr_auto]
+         2xl:landscape:grid-cols-[20%_1fr_20%];
 }
 
 .main-layout {
