@@ -6,7 +6,7 @@ import { Nav } from './components/nav'
 
 function App() {
   return (
-    <div className='bg-[var(--navy)] app-layout'>
+    <div className='bg-[var(--navy)] app-layout p-4'>
       <Nav />
       <Content />
       <Footer />
