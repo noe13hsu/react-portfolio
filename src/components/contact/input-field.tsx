@@ -25,7 +25,7 @@ export const InputField = ({
       </label>
       <input
         autoComplete={autoComplete}
-        className='bg-[var(--ice)] rounded-xs'
+        className='bg-[var(--ice)] rounded-xs text-black'
         id={id}
         name={id}
         required={required}

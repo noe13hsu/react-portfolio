@@ -4,7 +4,7 @@ export const Form = () => {
   return (
     <form
       action='https://formspree.io/f/myzjbpgz'
-      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 lg:p-6'
+      className='bg-[var(--grey)] p-4 rounded-lg space-y-4 w-full max-w-lg h-fit lg:p-6 m-auto'
       method='POST'
     >
       <fieldset>
@@ -21,7 +21,7 @@ export const Form = () => {
 
       <div className='flex flex-col'>
         <label className='text-[var(--aqua)] text-xl lg:text-2xl' htmlFor='message'>Message</label>
-        <textarea className='bg-[var(--ice)] h-40 rounded-xs' id='message' name='message' required />
+        <textarea className='bg-[var(--ice)] h-40 rounded-xs text-black' id='message' name='message' required />
       </div>
 
       <div className='flex justify-center'>
