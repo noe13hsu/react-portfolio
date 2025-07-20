@@ -1,19 +1,28 @@
+import {
+  IoBaseballOutline,
+  IoBasketballOutline,
+  IoExtensionPuzzleOutline,
+  IoFilmOutline,
+  IoGameControllerOutline,
+  IoMusicalNotesOutline,
+} from 'react-icons/io5';
+
 import { FadeIn } from '../fade-in'
-import { Badge } from './badge'
+import { IconLabel } from './icon-label'
 
 const hobbies = [
-  'Gaming',
-  'Movies',
-  'Music',
-  'Basketball',
-  'Baseball',
-  'Gundam model kits'
+  {Icon: IoGameControllerOutline, label: 'Gaming'},
+  {Icon: IoFilmOutline, label: 'Movies'},
+  {Icon: IoMusicalNotesOutline, label: 'Music'},
+  {Icon: IoBasketballOutline, label: 'Basketball'},
+  {Icon: IoBaseballOutline, label: 'Baseball'},
+  {Icon: IoExtensionPuzzleOutline, label: 'Gundam model kits'},
 ]
 
 export const Hobbies = () => {
   return (
     <FadeIn className='about-section-layout' delay={600}>
-      {hobbies.map(hobby => <Badge key={hobby} className='text-[var(--ice)]' text={hobby} />)}
+      {hobbies.map(({Icon, label}) => <IconLabel key={label} Icon={Icon} label={label} />)}
     </FadeIn>
   )
 }

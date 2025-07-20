@@ -88,7 +88,9 @@
 }
 
 .about-section-layout {
-  @apply grid grid-cols-3 gap-2
+  @apply grid grid-cols-2 gap-2 bg-[var(--grey)] p-4 rounded-md
+         lg:p-6
+         lg:grid-cols-3
          lg:gap-4;
 }
 
