@@ -74,6 +74,6 @@ export const internalLinks = [
     download: true,
     Icon: LuDownload,
     label: 'Download CV',
-    to: '/cv.pdf',
+    to: '/Noe_Hsu.pdf',
   },
 ]
